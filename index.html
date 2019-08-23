@@ -16,10 +16,13 @@
         <p v-html="websiteTag" ></p>
         <hr/>
         <h1>Click Event</h1>
-        <h3>Cart items : {{cart}}</h3>
-        <button v-on:click="add" >Add item</button>
-        <button v-on:click="remove" >Remove item</button>
+        <h2>Cart items : {{cart}}</h2>
+        <button v-on:click="add(1)" >Add item</button>
+        <button v-on:click="remove(1)" >Remove item</button>
         <hr/>
+        <h1>Double Click Event</h1>
+        <button v-on:dblclick="add(5)" >Add 5 items</button>
+        <button v-on:dblclick="remove(5)" >Remove 5 items</button>
     </div>
     <script src="app.js" ></script>
 </body>

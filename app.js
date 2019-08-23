@@ -11,11 +11,11 @@ new Vue({
         greet:function(){
             return 'Welcome ' + this.name
         },
-        add:function(){
-            this.cart++;
+        add:function(item){
+            this.cart+=item;
         },
-        remove:function(){
-            this.cart--;
+        remove:function(item){
+            this.cart-=item;
         }
     }
 });
