@@ -23,6 +23,9 @@
         <h1>Double Click Event</h1>
         <button v-on:dblclick="add(5)" >Add 5 items</button>
         <button v-on:dblclick="remove(5)" >Remove 5 items</button>
+        <hr/>
+        <h1>Cursor Event</h1>
+        <div id="canvas" v-on:mousemove="updateXY" >{{x}}    {{y}}</div>
     </div>
     <script src="app.js" ></script>
 </body>

@@ -5,7 +5,9 @@ new Vue({
         job:'ninja',
         web:'http://www.inarsi.com',
         websiteTag:'<a href="www.google.com">Google</a>',
-        cart: 5
+        cart: 5,
+        x:0,
+        y:0
     },
     methods:{
         greet:function(){
@@ -16,6 +18,11 @@ new Vue({
         },
         remove:function(item){
             this.cart-=item;
+        },
+        updateXY:function(e){
+            console.log(e);
+            this.x= e.offsetX;
+            this.y=e.offsetY;
         }
     }
 });
