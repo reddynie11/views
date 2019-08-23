@@ -21,6 +21,19 @@
         <div v-bind:class="cssClass" >
             <span>Dynamic Taxi Driver</span>
         </div>
+        <hr/>
+        <h1>Conditional</h1>
+        <h2>v-if</h2>
+        <button v-on:click="error= !error" >Toggle Error</button>
+        <button v-on:click="success= !success" >Toggle success</button>
+        <p v-if="error" >Error Message</p>
+        <p v-else-if="success">Success Message</p>
+        <h2>v-show</h2>
+        <button v-on:click="error2= !error2" >Toggle Error</button>
+        <button v-on:click="success2= !success2" >Toggle success</button>
+        <p v-show="error2" >Error Message</p>
+        <p v-show="success2">Success Message</p>
+
 
     </div>
     <script src="app2.js" ></script>

@@ -2,7 +2,11 @@ new Vue({
     el:'#vue-app2',
     data:{
         available: false,
-        nearby :false
+        nearby :false,
+        error:false,
+        success:false,
+        error2:false,
+        success2:false
 
     },
 
