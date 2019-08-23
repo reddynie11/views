@@ -9,7 +9,10 @@ new Vue({
         x:0,
         y:0,
         name2:'',
-        age2:''
+        age2:'',
+        pnum: 20,
+        a : 0,
+        b: 0
     },
     methods:{
         greet:function(){
@@ -30,6 +33,14 @@ new Vue({
         },
         logAge:function(){
             console.log('Age')
+        }
+    },
+    computed:{
+        sumA:function(){
+            return this.pnum+this.a
+        },
+        sumB:function(){
+            return this.pnum+this.b
         }
     }
 });
