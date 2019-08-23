@@ -32,6 +32,15 @@
         <input type="text" v-on:keyup.tab="logName"  >
         <label for="age">Age: </label>
         <input type="text" v-on:keyup.tab="logAge" >
+        <hr/>
+        <h1>TwoWay data binding</h1>
+        <label for="name">Name: </label>
+        <input type="text" v-model="name2"  ><br/>
+        <span>{{name2}}</span><br/>
+        <label for="age">Age: </label>
+        <input type="text" v-model="age2" ><br/>
+        <span>{{age2}}</span><br/>
+
     </div>
     <script src="app.js" ></script>
 </body>

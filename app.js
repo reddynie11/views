@@ -7,7 +7,9 @@ new Vue({
         websiteTag:'<a href="www.google.com">Google</a>',
         cart: 5,
         x:0,
-        y:0
+        y:0,
+        name2:'',
+        age2:''
     },
     methods:{
         greet:function(){
