@@ -20,9 +20,14 @@ new Vue({
             this.cart-=item;
         },
         updateXY:function(e){
-            console.log(e);
             this.x= e.offsetX;
             this.y=e.offsetY;
+        },
+        logName:function(){
+            console.log('Name')
+        },
+        logAge:function(){
+            console.log('Age')
         }
     }
 });

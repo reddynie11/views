@@ -26,6 +26,12 @@
         <hr/>
         <h1>Cursor Event</h1>
         <div id="canvas" v-on:mousemove="updateXY" >{{x}}    {{y}}</div>
+        <hr/>
+        <h1>Keyboard Events</h1>
+        <label for="name">Name: </label>
+        <input type="text" v-on:keyup.tab="logName"  >
+        <label for="age">Age: </label>
+        <input type="text" v-on:keyup.tab="logAge" >
     </div>
     <script src="app.js" ></script>
 </body>
