@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <title>Vue</title>
+</head>
+<body>
+    <div id="vue-app2">
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+        <div v-on:click="available=!available" v-bind:class="{available: available}" >
+            <span>Taxi Driver</span>
+        </div>
+        <h2>Example 2</h2>
+        <button v-on:click="available=!available" >Toggle Available</button>
+        <button v-on:click="nearby=!nearby" >Toggle nearby</button>
+        <div v-bind:class="cssClass" >
+            <span>Dynamic Taxi Driver</span>
+        </div>
+
+    </div>
+    <script src="app2.js" ></script>
+</body>
+</html>
