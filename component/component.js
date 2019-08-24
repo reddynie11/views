@@ -1,3 +1,18 @@
+Vue.component('component',{
+    template:'<h3>This is a reuseable component.<br/>{{title}} <br/><button v-on:click="changeCom">change component</button></h3>',
+    data:function(){
+        return {
+            title : 'this will change on click'
+        }
+    },
+    methods:{
+        changeCom:function(){
+            this.title='component has only changed on this instance'
+        }
+    }
+})
+
+
 var one = new Vue({
     el:'#app1',
     data:{
