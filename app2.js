@@ -6,7 +6,14 @@ new Vue({
         error:false,
         success:false,
         error2:false,
-        success2:false
+        success2:false,
+        characters : ['Hero', 'Heroine', 'Villian', 'Comedian'],
+        movies:[
+            {title:'Mission Impossible', hero : 'Tom Cruise' },
+            {title:'Saaho', hero : 'Prabhas' },
+            {title:'Ra-One', hero : 'Sharukh Khan' },
+            {title:'PK', hero : 'Aamir Khan' },
+        ]
 
     },
 

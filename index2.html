@@ -33,6 +33,15 @@
         <button v-on:click="success2= !success2" >Toggle success</button>
         <p v-show="error2" >Error Message</p>
         <p v-show="success2">Success Message</p>
+        <h2>v-for</h2>
+        <template v-for="(item,index) in characters" >
+            <p>{{index}}. {{item}}</p>
+        </template>
+        <div v-for="movie in movies" >
+            <template v-for="(val, key) in movie" >
+                <p>{{key}} : {{val}}</p>
+            </template>
+        </div>
 
 
     </div>
