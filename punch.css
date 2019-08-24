@@ -1,0 +1,25 @@
+#img{
+    width:200px;
+    height:500px;
+    margin: 20px auto;
+    background: url('/punchimg/bag.png') center no-repeat;
+    background-size: 80%
+}
+#img.burst{
+    background: url('/punchimg/bag-burst.png') center no-repeat;
+    background-size: 80%
+}
+
+#health{
+    width:200px;
+    border : 1px solid #000;
+    margin : 20px auto;
+}
+#health div{
+    height:20px;
+    background: #31F168;
+}
+#control{
+    width : 120px;
+    margin: 0 auto;
+}
