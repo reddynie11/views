@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-     title:'Nested Component',
+     title:'Nested Component - Local Import',
      ninjas:['Contra','Mario','tekken','bloody Roar']
     }
   }
