@@ -1,16 +1,22 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
-    <New></New>
+    <app-header />
+    <app-movies />
+    <app-footer />
+    
   </div>
  
 </template>
 
 <script>
-import newComponent from './newComponent.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import Movies from './components/Movies.vue'
 export default {
   components:{
-    'New': newComponent
+    'app-header': Header,
+    'app-footer': Footer,
+    'app-movies': Movies
   },
   data () {
     return {
@@ -23,7 +29,7 @@ export default {
 <style scoped>
 h1{
   text-align: end;
-  
+
 }
 
 </style>
