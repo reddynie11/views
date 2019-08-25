@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-header />
-    <app-movies />
+    <app-movies v-bind:moviesList="movies" />
     <app-footer />
     
   </div>
@@ -20,7 +20,15 @@ export default {
   },
   data () {
     return {
-     title:'Root Component'
+     title:'Root Component',
+     movies:[
+                {name:'Saaho',hero:'Prabhas',heroine:'Shraddha Kapoor',show:false},
+                {name:'Jalsa',hero:'Pawan Kalyan',heroine:'Ileana Dcruz',show:false},
+                {name:'Robo',hero:'Rajini Kant',heroine:'Aishwarya Rai',show:false},
+                {name:'Dear Comred',hero:'Vijay Devarakonda',heroine:'Rashmika',show:false},
+                {name:'Yevadu',hero:'Ram Charan',heroine:'Amy Jackson',show:false},
+                {name:'Bahubali',hero:'Prabhas',heroine:'Tamanna',show:false},
+            ]
     }
   }
 }
