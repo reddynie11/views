@@ -4,6 +4,7 @@
     </footer>
 </template>
 <script>
+import {bus} from '../main';
 export default {
     props:{
         footerTitle:{
@@ -14,9 +15,16 @@ export default {
         return{
             title:'Copyrights reserved @2019.'
         }
+    },
+    created(){
+        bus.$on('newTitle',(data)=>{
+            this.footerTitle = data
+        })
     }
 }
 </script>
+
+
 <style scoped>
 footer{
     background: #222;

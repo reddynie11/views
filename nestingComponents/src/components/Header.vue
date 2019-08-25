@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import {bus} from '../main';
+
 export default {
     props:{
         headerTitle:{
@@ -18,7 +20,10 @@ export default {
     },
     methods:{
         changeTitle:function(){
-            this.$emit('newTitle','Best Movies')
+            //this.$emit('newTitle','Best Movies')
+            let nt = 'Best Movies'
+            this.headerTitle = nt
+            bus.$emit('newTitle',nt)
         }
     }
 }

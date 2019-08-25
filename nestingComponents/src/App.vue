@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header v-bind:headerTitle="title" v-on:newTitle="updateTitle($event)" />
+    <app-header v-bind:headerTitle="title" />
     <app-movies v-bind:moviesList="movies" />
     <app-footer v-bind:footerTitle="title" />
     

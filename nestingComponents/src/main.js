@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import newComponent from './newComponent.vue'
 
-Vue.component('New', newComponent)
-
+export const bus = new Vue;
 
 new Vue({
   el: '#app',
