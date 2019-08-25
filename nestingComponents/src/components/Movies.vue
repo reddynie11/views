@@ -13,7 +13,12 @@
 
 <script>
 export default {
-    props:['moviesList'],
+    props:{
+        moviesList:{
+            type:Array,
+            required:true
+        }
+    },
     data(){
         return {
             
