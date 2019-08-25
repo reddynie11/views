@@ -1,14 +1,24 @@
 <template>
     <header>
-        <h1>{{title}}</h1>
+        <h1 v-on:click="changeTitle" >{{headerTitle}}</h1>
     </header>
 </template>
 
 <script>
 export default {
+    props:{
+        headerTitle:{
+            type:String
+        }
+    },
     data(){
         return {
-            title:'Movies'
+            
+        }
+    },
+    methods:{
+        changeTitle:function(){
+            this.$emit('newTitle','Best Movies')
         }
     }
 }

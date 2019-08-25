@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header />
+    <app-header v-bind:headerTitle="title" v-on:newTitle="updateTitle($event)" />
     <app-movies v-bind:moviesList="movies" />
-    <app-footer />
+    <app-footer v-bind:footerTitle="title" />
     
   </div>
  
@@ -20,7 +20,8 @@ export default {
   },
   data () {
     return {
-     title:'Root Component',
+     title:'Movies List',
+
      movies:[
                 {name:'Saaho',hero:'Prabhas',heroine:'Shraddha Kapoor',show:false},
                 {name:'Jalsa',hero:'Pawan Kalyan',heroine:'Ileana Dcruz',show:false},
@@ -29,6 +30,11 @@ export default {
                 {name:'Yevadu',hero:'Ram Charan',heroine:'Amy Jackson',show:false},
                 {name:'Bahubali',hero:'Prabhas',heroine:'Tamanna',show:false},
             ]
+    }
+  },
+  methods:{
+    updateTitle(newTitle){
+      this.title = newTitle
     }
   }
 }
